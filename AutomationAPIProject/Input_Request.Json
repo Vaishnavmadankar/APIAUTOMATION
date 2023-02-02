@@ -1,0 +1,22 @@
+{
+      "Designation": "Legendary Actor",
+      "First_name": "Arbaj",
+      "Address": [
+        {
+          "Type": "primary",
+          "Tahsil": "Umred",
+          "Dist": "Nagpur",
+          "Pincode": "440001"
+        },
+        {
+          "Type": "secondary",
+          "Tahsil": "Nagbhid",
+          "Dist": "Chandrapur",
+          "Pincode": "441221"
+        }
+      ],
+      "Last_name": "Khan",
+      "City": "bandara",
+      "Employee_code": "009",
+      "id": "{{id}}"
+    }
