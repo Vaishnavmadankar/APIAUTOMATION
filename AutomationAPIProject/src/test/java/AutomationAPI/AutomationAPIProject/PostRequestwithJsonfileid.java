@@ -18,9 +18,9 @@ public class PostRequestwithJsonfileid
 {
 	public static void main(String[] args) throws FileNotFoundException 
 	{
-		File f=new File("../AutomationAPIProject/Input_Request.Json");
-		FileReader RE=new FileReader(f);
-		JSONTokener Js=new JSONTokener(RE);
+		File f=new File("../AutomationAPIProject/Input_Request.Json"); // to establish communication
+		FileReader RE=new FileReader(f);     // Reader file class input steam
+		JSONTokener Js=new JSONTokener(RE); // Json file reader
 		JSONObject Obj=new JSONObject(Js);
 		
 		System.out.println("Please enter the id value");
@@ -28,8 +28,6 @@ public class PostRequestwithJsonfileid
 		Integer idvalues=S.nextInt();
 		
 		String bodydata=Obj.toString();
-		
-	
 		bodydata=bodydata.replaceAll(Pattern.quote("{{id}}"), idvalues.toString());
 		
 		Response res=
